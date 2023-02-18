@@ -58,6 +58,7 @@ html{
 #navbar{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin-top: 2.5rem;
     height: 10%;
 }
@@ -77,4 +78,13 @@ html{
 .links a{
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.logo{
+    margin-right: auto;
+    margin-left: 3.438rem;
+}
+
+.bold-number{
+    font-weight: bold;
 }
