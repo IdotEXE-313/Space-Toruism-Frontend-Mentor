@@ -69,8 +69,8 @@ html{
     background: rgba(255, 255, 255, 0.05);
     min-width: 40%;
     backdrop-filter: blur(50px);
-    padding-left: 7.688rem;
-    padding-right: 10.313rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
@@ -87,4 +87,12 @@ html{
 
 .bold-number{
     font-weight: bold;
+}
+
+.dash{
+    position: relative;
+    border: 1px solid #979797;
+    width: 29.5625rem;
+    left: 2.5rem;
+    z-index: 1000;
 }
