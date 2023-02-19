@@ -155,7 +155,6 @@ main{
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    line-height: 0.125rem;
 }
 
 #explore{
@@ -216,7 +215,7 @@ main{
         background-image: url('../../assets/home/background-home-mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 100%;
+        min-height: 100vh;
     }
     .links,
     .dash{
@@ -240,10 +239,10 @@ main{
         justify-content:unset;
         position: absolute;
         z-index: 1;
-        top:0;
+        top: 0;
         bottom: 0;
-        min-height: 100%;
         width: 50%;
+        height: 100%;
         
     }
 
