@@ -45,9 +45,13 @@ table {
 }
 
 body,
-html{
+html,
+main{
     background-image: url('../../assets/home/background-home-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: inherit;
+    min-height: 100%;
 }
 
 :root{
@@ -59,8 +63,8 @@ html{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 2.5rem;
-    height: 10%;
+    margin-top: 2rem;
+    height: 6rem;
 }
 
 .links{
@@ -83,6 +87,8 @@ html{
 .logo{
     margin-right: auto;
     margin-left: 3.438rem;
+    margin-right: 3.438rem;
+    min-width: 2.5rem;
 }
 
 .bold-number{
@@ -92,7 +98,35 @@ html{
 .dash{
     position: relative;
     border: 1px solid #979797;
-    width: 29.5625rem;
-    left: 2.5rem;
+    width: 100%;
+    left: 1rem;
     z-index: 1000;
+}
+
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin-left: 10.376rem;
+    max-width: 28.125rem;
+}
+
+#pre-heading{
+    color: #D0D6F9;
+    font-size: 1.75rem;
+    letter-spacing: 0.295rem;
+}
+
+#heading{
+    font-family: 'Bellefair', sans-serif;
+    color: #FFFFFF;
+    font-size: 9.375rem;
+    margin: 1rem 0;
+}
+
+#intro-expand{
+    color: #D0D6F9;
+    font-size: 1.125rem;
+    line-height: 2rem;
 }
