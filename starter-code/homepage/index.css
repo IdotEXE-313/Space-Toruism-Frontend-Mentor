@@ -103,6 +103,13 @@ main{
     opacity: 0.25;
 }
 
+.line{
+    height: 5px;
+    width: 24px;
+    background-color: #D0D6F9;
+    margin: 5px;
+}
+
 .content{
     display:flex;
     justify-content: flex-end;
@@ -156,7 +163,14 @@ main{
     text-decoration: none;
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+.navCheck,
+#navCollapse{
+    display:none;
+}
+
+
+
+@media (max-width: 1200px) {
     main,
     html{
         background-image: url('../../assets/home/background-home-tablet.jpg');
@@ -176,13 +190,16 @@ main{
         display:flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         margin: 20% 0 20% 0;
     }
     .explore-button{
         margin: 0;
     }
     .bold-number,
-    .dash{
+    .dash
+    .navCheck,
+    #navCollapse{
         display: none;
     }
     .logo{
@@ -191,5 +208,45 @@ main{
     #intro-expand{
         line-height: 1.75rem;
     }
+}
+
+@media (max-width: 600px){
+    html,
+    body{
+        background-image: url('../../assets/home/background-home-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100%;
+    }
+    .links,
+    .dash{
+        display: none;
+    }
+    #navbar{
+        margin-top: 2rem;
+    }
+    .content{
+        margin-bottom: 2rem;
+    }
+    .navCheck{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-right: 3.438rem;
+    }
+    #navCollapse:checked ~ .links{
+        display:flex;
+        flex-direction: column;
+        justify-content:unset;
+        position: absolute;
+        z-index: 1;
+        top:0;
+        bottom: 0;
+        min-height: 100%;
+        width: 50%;
+        
+    }
+
+    
 }
 
